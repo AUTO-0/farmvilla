@@ -2,7 +2,7 @@
 :root{--fv8p-copper:#bd805c;--fv8p-olive:#344c3b;--fv8p-ivory:#f5efdf;--fv8p-sage:#ccd9b1}
 .hero{background:radial-gradient(ellipse at 72% 46%,#44604a 0%,#192c20 48%,#111a13 92%)}
 .hero:after{background:linear-gradient(90deg,#101a13d0,#111d149b 32%,transparent 70%)!important}
-.hero .fv7-hero-stage{z-index:-1}
+.hero .fv7-hero-stage{z-index:0}
 .hero .fv7-hero-scene{width:min(86vw,1320px);right:-6%;bottom:-11%;filter:drop-shadow(0 33px 60px #07160d88) saturate(1.06);animation:fv8pHeroReveal 1.6s cubic-bezier(.15,.8,.2,1) both}
 .hero .fv7-hero-stage:after{background:linear-gradient(90deg,#102016df,#102016b4 22%,#15241656 49%,transparent 78%)}
 .hero .fv7-hero-stage .fv7-atmosphere{opacity:.58;mix-blend-mode:screen}
