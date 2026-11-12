@@ -20,6 +20,7 @@
     copy.textContent=p.text;
     art.dataset.chapter=String(i);
     artImg.src=p.art;
+    artImg.alt=i===1||i===3?'Original illustrated concept of the warm, restful interior of a small farm villa':'Original illustrated countryside villa with flowering trees and evening lanterns';
     tag.textContent=p.tag;
     number.textContent=String(i+1).padStart(2,'0')+' / 04';
     prev.disabled=i===0;next.disabled=i===pages.length-1;
@@ -47,6 +48,12 @@
     });
   }
   drawPage(0);
+  // Package cards select the relevant booking type without bypassing live availability checks.
+  document.querySelectorAll('[data-package]').forEach(link=>link.addEventListener('click',()=>{
+    const sel=$('package');if(!sel)return;
+    sel.value=link.dataset.package==='special'?'Special Stay':'Standard Villa Stay';
+    sel.dispatchEvent(new Event('change',{bubbles:true}));
+  }));
   const menuBtn=$('menu-btn'),menu=$('mobile-panel');
   if(menuBtn&&menu){
     function setMenu(open){
