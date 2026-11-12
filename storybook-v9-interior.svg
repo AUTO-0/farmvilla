@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 850" role="img" aria-labelledby="title description">
+<title id="title">An evening in the villa</title><desc id="description">Original storybook illustration of a warm, peaceful villa interior with soft linens, hanging lights and tropical palms visible through an arched window.</desc>
+<defs><linearGradient id="walls" x2="0" y2="1"><stop stop-color="#ecdec8"/><stop offset=".62" stop-color="#d3bdab"/><stop offset="1" stop-color="#c3aa99"/></linearGradient><linearGradient id="nightSky" x2="0" y2="1"><stop stop-color="#34425e"/><stop offset=".62" stop-color="#826c86"/><stop offset="1" stop-color="#dbb5a6"/></linearGradient><linearGradient id="bed" x2=".1" y2="1"><stop stop-color="#faf0e0"/><stop offset=".65" stop-color="#e8d8ca"/><stop offset="1" stop-color="#bda899"/></linearGradient><linearGradient id="floor" x2="0" y2="1"><stop stop-color="#ac8f78"/><stop offset="1" stop-color="#6c6258"/></linearGradient><radialGradient id="bulb"><stop stop-color="#fff4ce"/><stop offset=".2" stop-color="#ffe1b2" stop-opacity=".72"/><stop offset="1" stop-color="#e9b78c" stop-opacity="0"/></radialGradient><filter id="haze"><feGaussianBlur stdDeviation="14"/></filter><clipPath id="window"><path d="M657 187Q657 95 795 95Q935 95 935 187V596H657Z"/></clipPath><style><![CDATA[
+#curtain{animation:curtain 10s ease-in-out infinite alternate;transform-origin:670px 143px}
+#bulbglow{animation:glow 6s ease-in-out infinite alternate}
+#outside{animation:outside 16s ease-in-out infinite alternate}
+@keyframes curtain{to{transform:skewX(2deg)}}@keyframes glow{to{opacity:.6}}@keyframes outside{to{transform:translateX(7px)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+]]></style></defs>
+<rect width="1200" height="850" fill="url(#walls)"/>
+<rect y="665" width="1200" height="185" fill="url(#floor)"/>
+<path d="M0 668H1200" stroke="#a78c7b" stroke-width="9"/>
+<path d="M0 720H1200 M0 778H1200 M0 829H1200" stroke="#c1a38b" stroke-width="3" opacity=".32"/>
+<path d="M115 0L78 670M1099 0L1143 674" stroke="#e8d7c5" stroke-width="30" opacity=".33"/>
+<!-- tall arched tropical window -->
+<path d="M619 193Q619 57 795 57Q973 57 973 193V633H619Z" fill="#b4a69f" stroke="#f2e2d1" stroke-width="15"/>
+<path d="M651 189Q651 96 794 96Q940 96 940 189V601H651Z" fill="url(#nightSky)" stroke="#5c676a" stroke-width="10"/>
+<g clip-path="url(#window)" id="outside"><circle cx="850" cy="219" r="47" fill="#f7dfc6" opacity=".85"/><circle cx="850" cy="219" r="68" fill="none" stroke="#fbebd8" stroke-opacity=".3"/><path d="M628 558Q730 421 815 503T974 466V626H628Z" fill="#3e6561"/><path d="M617 604Q763 514 849 555T983 533V646H618Z" fill="#244f4c"/><path d="M706 623Q702 400 721 332" stroke="#385a53" stroke-width="15" fill="none"/><g fill="#4e8274"><path d="M721 338Q619 297 592 229Q665 265 731 360Z"/><path d="M728 338Q753 226 822 198Q775 296 736 358Z"/><path d="M722 341Q652 355 610 405Q678 387 734 362Z"/><path d="M739 348Q814 316 883 350Q819 345 739 367Z"/></g><path d="M906 627Q904 452 926 379" stroke="#3c6255" stroke-width="14" fill="none"/><g fill="#397369"><path d="M925 383Q847 327 826 272Q894 305 934 391Z"/><path d="M923 389Q950 305 1002 271Q966 368 935 398Z"/></g><g fill="#f9e9d7"><circle cx="745" cy="162" r="2"/><circle cx="677" cy="252" r="2"/><circle cx="903" cy="151" r="2"/></g></g>
+<path d="M800 103V602M652 363H940" stroke="#e5d4bf" stroke-width="10"/><path d="M652 605H941" stroke="#987d6d" stroke-width="20"/>
+<g id="curtain"><path d="M621 92Q652 75 676 96Q680 249 686 387Q692 514 657 614L605 610Q632 372 621 92Z" fill="#d8b7a8"/><path d="M620 100Q644 300 628 600M646 102Q658 353 638 602" fill="none" stroke="#f3d8c7" stroke-width="8" opacity=".44"/></g>
+<path d="M973 95Q947 70 927 99Q910 294 911 421Q905 533 960 612L1004 604Q961 378 973 95Z" fill="#ccab9b"/>
+<path d="M945 103Q927 289 956 588" stroke="#f2d7c8" stroke-width="8" opacity=".34" fill="none"/>
+<!-- layered wall panel -->
+<path d="M80 147H505V585H80Z" fill="#e5d6c3" stroke="#bbab99" stroke-width="5" opacity=".45"/>
+<path d="M104 169H476V563H104Z" fill="#e6d8cb" opacity=".64"/>
+<!-- mural framed botanical drawing -->
+<rect x="150" y="150" width="244" height="250" rx="4" fill="#b5a28f" opacity=".25"/>
+<rect x="167" y="158" width="211" height="228" rx="4" fill="#f1e8d6" stroke="#9e866d" stroke-width="7"/>
+<path d="M276 356Q275 249 283 196 M279 298Q232 271 217 237M280 276Q312 252 326 225 M278 326Q239 307 226 287" stroke="#69846e" stroke-width="6" stroke-linecap="round" fill="none"/>
+<g fill="#9db093"><path d="M283 198Q259 188 257 161Q286 171 283 207Z"/><path d="M276 281Q232 269 210 227Q259 238 282 282Z"/><path d="M282 263Q323 240 340 216Q307 227 279 267Z"/></g>
+<!-- cozy bed -->
+<ellipse cx="426" cy="694" rx="359" ry="55" fill="#5c4c48" opacity=".28" filter="url(#haze)"/>
+<path d="M72 528Q63 468 104 453H531Q565 469 552 547V699H72Z" fill="#9a857b"/>
+<path d="M95 470H533V603H95Z" fill="#bfa99c"/>
+<path d="M95 545Q162 514 272 528T531 535L564 612V709Q342 750 67 701V614Z" fill="url(#bed)" stroke="#ead9c6" stroke-width="6"/>
+<path d="M95 607Q298 586 551 615" stroke="#f7f0e6" stroke-width="9" opacity=".6" fill="none"/>
+<path d="M75 681Q282 728 555 680" fill="none" stroke="#d2b9a8" stroke-width="9"/>
+<rect x="125" y="487" width="164" height="93" rx="27" fill="#efe1d3" stroke="#cdb7a6" stroke-width="5" transform="rotate(-5 207 533)"/>
+<rect x="305" y="488" width="181" height="92" rx="30" fill="#f0e5d8" stroke="#cdbbaa" stroke-width="5" transform="rotate(3 395 532)"/>
+<path d="M94 592Q283 560 533 592" stroke="#d7c0b3" stroke-width="5" opacity=".7" fill="none"/>
+<!-- rustic nightstand -->
+<path d="M568 600H652V697H568Z" fill="#9b816a"/><path d="M557 589H658V612H557Z" fill="#c9a788"/><path d="M583 619H637V672H583Z" fill="#6f5c50" opacity=".55"/><circle cx="619" cy="651" r="3" fill="#e8d4b4"/>
+<!-- glowing lamp -->
+<g id="bulbglow"><circle cx="607" cy="545" r="117" fill="url(#bulb)" opacity=".85"/></g>
+<path d="M610 530V580" stroke="#795c47" stroke-width="8"/><path d="M580 547Q586 501 609 497Q634 503 642 548Z" fill="#f0d2a5" stroke="#cca274" stroke-width="4"/>
+<circle cx="610" cy="548" r="10" fill="#fff0c3"/>
+<!-- chair and sidebooks -->
+<path d="M1000 613Q1002 536 1056 536Q1108 534 1110 616V695H1000Z" fill="#a38c7d" stroke="#ddc1a7" stroke-width="7"/>
+<path d="M1005 653H1109L1132 712H993Z" fill="#c1a38b"/>
+<path d="M1008 701L1001 762M1114 700L1119 762" stroke="#786757" stroke-width="12"/>
+<path d="M1040 647L1091 647" stroke="#e4c8aa" stroke-width="12"/>
+<g fill="#d4b39c"><path d="M1082 728H1172V741H1082Z"/><path d="M1091 716H1180V728H1091Z"/><path d="M1086 706H1171V716H1086Z"/></g>
+<!-- floating particles -->
+<g fill="#fff1d4" opacity=".65"><circle cx="120" cy="119" r="3"/><circle cx="547" cy="197" r="2"/><circle cx="1093" cy="328" r="3"/></g>
+</svg>
