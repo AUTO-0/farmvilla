@@ -104,7 +104,7 @@
        action:'create',name:data.get('Name'),phone:data.get('Phone'),email:data.get('Email')||'',
        check_in:arrival.value,check_out:departure.value,package:packageType(),
        guests:Number(data.get('Guests')?.toString().split(' ')[0]||2),
-       notes:data.get('Notes')||'',website:''
+       notes:data.get('Notes')||'',consent:document.getElementById('fvConsent')?.checked===true,website:''
      })});
      const wrap=document.createElement('div');wrap.className='fv-receipt';
      const heading=document.createElement('h3');heading.textContent='Request received ✓';
