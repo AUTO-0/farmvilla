@@ -1,5 +1,5 @@
 # FARMVILLA — Business & Operations Model
-Version 1 · 12 November 2026 · Sri Lanka
+Version 2 · 12 November 2026 · Sri Lanka
 
 ## Positioning
 FARMVILLA begins with a single one-bedroom farm retreat for couples, quiet weekend stays and small pre-approved celebrations. The public site is deliberately text-led and photo-free. Future individual pools, additional villas and a farm/BYOB dining concept are **ideas only** and must not be marketed as available amenities.
@@ -8,12 +8,15 @@ FARMVILLA begins with a single one-bedroom farm retreat for couples, quiet weeke
 - Guest site: https://auto-0.github.io/farmvilla/
 - Owner console: https://auto-0.github.io/farmvilla/admin/
 - Source repository: https://github.com/AUTO-0/farmvilla
-- The owner console in Version 1 is **local-only** and stores records in browser localStorage. It is an operational prototype, not a private authenticated production system. On a different device its database will be empty. Clearing browsing data may delete records. It does not transmit guest enquiries from the public site. Do not enter real customer personal information until a secure backend and access control are provisioned.
-- To enable live bookings: create a separate dedicated villa project in an approved backend; set up staff authentication, row-level security, private customer data, server-side availability and booking transactions, audit log, automated confirmation email or WhatsApp via an approved service, invoice numbering and payment verification. Do NOT connect this to FIELDZERO records.
+- Current deployment: Live guest booking API with server-side conflict prevention, secure records, automatic references and 24-hour pending date holds. The owner dashboard uses authenticated Supabase sign-in to manage approvals, payments, real-time pricing, invoices and financial records.
+- FARMVILLA has separate `fv_*` database tables and access rules inside the Supabase project also used by FIELDZERO. Customer records are not stored in any FIELDZERO booking tables. A wholly separate Supabase project is an optional future migration.
+- Old browser-only dashboard is archived at `/admin/local-demo.html` and not synchronized.
+- Still required before full commercial operations: payment gateway and verified payment webhooks, outbound email/WhatsApp notifications, approved cancellation/house policies, formal tax invoice configuration and a full end-to-end test in a browser.
+- Privacy notice is at `/privacy.html`; business contact information and final retention policy should be provided by owner.
 
 ## Service and guest journey
 1. Customer sees marketing, concept details, honest amenities and price/terms; chooses check-in and check-out dates.
-2. Guest submits enquiry via a verified channel. Until the live booking backend exists, website contact enquiry is **not** transmitted.
+2. Guest submits enquiry via a verified channel. The website now sends the request directly to the secure booking endpoint and displays a pending reference.
 3. Staff checks availability and guest count, acknowledges enquiry, shares total price and house rules.
 4. Confirm only after customer agrees to terms and deposit/payment policy, and payment has been independently verified.
 5. Assign a unique booking reference; record due balance, deposit, payment receipts and cancellations.
@@ -85,8 +88,8 @@ Quarterly: seasonal pricing changes, capital reserve, expansion gate and feasibi
 - [ ] Beds, bathroom, water, power, mosquito prevention, lighting and emergency equipment tested
 - [ ] Accurate address, photos (if ever desired), amenities, rules and contact details approved
 - [ ] Real prices, deposits, cancellation terms, tax and invoice format agreed
-- [ ] Dedicated secure booking backend, staff accounts and privacy policy
-- [ ] Payment confirmation, availability lock and confirmation workflow tested
+- [x] Booking database, authorized owner account and guest consent notice (additional privacy/legal review required)
+- [x] Server-side reservation conflict constraint and 24-hour holds; full live-browser acceptance test remains open
 - [ ] Cleaning turnaround and maintenance stock checklist
 - [ ] 3–5 test reservations with different dates and cancellations reconciled end-to-end
 
